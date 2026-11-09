@@ -1,0 +1,9 @@
+min_defect_px,defective_images,images_with_no_positive_patch,positive_patches,ambiguous_patches,clean_patches_in_defective_images
+1,105,1,366,0,2887
+5,105,1,365,1,2887
+10,105,4,357,9,2887
+25,105,28,304,62,2887
+50,105,44,269,97,2887
+100,105,53,248,118,2887
+500,105,75,184,182,2887
+2000,105,98,60,306,2887
