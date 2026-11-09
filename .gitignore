@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Data (never committed; see data/README.md)
+data/*
+!data/README.md
+
+# Large generated artefacts
+results/*.npy
+results/*.npz
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Figures that contain dataset images (the dataset has no stated licence)
+results/local/
+results/*/local/
+
+# Rendered video files are large: only the two web-sized ones are kept in the repository
+docs/media/*.mp4
+!docs/media/demo_web.mp4
+!docs/media/short_vertical_captioned.mp4
+
+# One-off helper that creates the git history from the unzipped folder; safe to delete
+commit-series.sh

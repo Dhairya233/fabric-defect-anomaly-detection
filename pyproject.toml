@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fabricdefect"
+version = "0.1.0"
+description = "Leak-aware evaluation of classical fabric defect detection on the AITEX AFID dataset"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+authors = [{ name = "Dhairya Shah" }]
+dependencies = ["numpy", "scipy", "pandas", "scikit-learn", "scikit-image", "matplotlib", "Pillow", "py7zr"]
+
+[project.urls]
+Homepage = "https://github.com/Dhairya233/fabric-defect-anomaly-detection"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests", "scripts", "media"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"media/scenes.py" = ["E501"]  # HTML templates
