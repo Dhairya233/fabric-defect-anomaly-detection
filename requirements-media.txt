@@ -1,0 +1,10 @@
+# Only needed to rebuild the demo video, GIF and screenshots (python media/build.py all).
+# The study itself needs requirements.txt only.
+-r requirements.txt
+playwright==1.64.1
+kokoro-onnx==0.6.1
+onnxruntime==1.31.1
+soundfile==0.14.0
+imageio-ffmpeg==0.8.1
+fonttools==4.68.0
+brotli==1.2.1

@@ -1,0 +1,4 @@
+Loudness of the final audio (EBU R128, measured with ffmpeg ebur128). Targets: integrated about -16 LUFS, true peak at most -1 dBTP.
+
+demo.mp4: integrated -16.1 LUFS, loudness range 1.7 LU, true peak -1.8 dBTP
+short_vertical.mp4: integrated -16.1 LUFS, loudness range 1.7 LU, true peak -1.8 dBTP

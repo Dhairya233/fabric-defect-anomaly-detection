@@ -1,0 +1,99 @@
+1
+00:00:00,600 --> 00:00:04,455
+The same random forest scored 0.23 or 0.68,
+
+2
+00:00:04,455 --> 00:00:08,131
+depending only on how the data was split.
+
+3
+00:00:09,631 --> 00:00:14,729
+This project tests classical computer vision on 245 fabric strips.
+
+4
+00:00:15,179 --> 00:00:17,703
+Strips are cut into overlapping patches.
+
+5
+00:00:17,703 --> 00:00:21,046
+Split by patch, and test texture leaks into training.
+
+6
+00:00:21,496 --> 00:00:24,824
+So I split by whole strip, and held out entire fabrics.
+
+7
+00:00:26,324 --> 00:00:29,121
+Each patch gets ninety texture features.
+
+8
+00:00:29,121 --> 00:00:31,359
+Supervised models learn defects.
+
+9
+00:00:31,359 --> 00:00:34,367
+Anomaly detectors learn only normal fabric.
+
+10
+00:00:34,817 --> 00:00:38,955
+Everything is scored three ways, including a deliberately leaky control.
+
+11
+00:00:40,455 --> 00:00:42,311
+This is the results explorer.
+
+12
+00:00:42,761 --> 00:00:47,386
+For the random forest, patch precision is 0.23
+
+13
+00:00:47,386 --> 00:00:51,809
+split by strip, and 0.68 with leaky patches.
+
+14
+00:00:51,809 --> 00:00:57,439
+A paired difference of plus 0.44, interval 0.27 to 0.53.
+
+15
+00:00:57,889 --> 00:01:02,578
+On an unseen fabric, nothing clearly beats chance.
+
+16
+00:01:02,578 --> 00:01:08,299
+The best of eight methods scores 0.59, interval 0.44 to 0.72.
+
+17
+00:01:08,749 --> 00:01:10,349
+Every strip can be inspected.
+
+18
+00:01:10,349 --> 00:01:11,949
+Here are the forest's misses.
+
+19
+00:01:12,399 --> 00:01:15,345
+Some results look good for the wrong reasons.
+
+20
+00:01:15,345 --> 00:01:18,487
+Brightness alone reaches 0.83 within one fabric.
+
+21
+00:01:18,487 --> 00:01:21,039
+Those strips were captured differently.
+
+22
+00:01:22,539 --> 00:01:25,294
+The limits are real: one small dataset,
+
+23
+00:01:25,294 --> 00:01:28,897
+7 fabrics, precomputed results, no factory testing.
+
+24
+00:01:29,347 --> 00:01:34,125
+204 of 245 strips also have blank margins.
+
+25
+00:01:35,625 --> 00:01:38,356
+Code, tables and the explorer are all open.

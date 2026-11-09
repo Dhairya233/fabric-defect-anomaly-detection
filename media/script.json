@@ -1,0 +1,155 @@
+{
+  "voice": "af_heart",
+  "speed": 1.0,
+  "line_gap": 0.45,
+  "main": {
+    "scenes": [
+      {
+        "id": "hook",
+        "kind": "card",
+        "lines": [
+          {
+            "id": "H1",
+            "text": "The same random forest scored {rf_ap_grouped} or {rf_ap_leaky}, depending only on how the data was split."
+          }
+        ]
+      },
+      {
+        "id": "problem",
+        "kind": "card",
+        "lines": [
+          {
+            "id": "P1",
+            "text": "This project tests classical computer vision on {n_strips} fabric strips."
+          },
+          {
+            "id": "P2",
+            "text": "Strips are cut into overlapping patches. Split by patch, and test texture leaks into training."
+          },
+          {
+            "id": "P3",
+            "text": "So I split by whole strip, and held out entire fabrics."
+          }
+        ]
+      },
+      {
+        "id": "methods",
+        "kind": "card",
+        "lines": [
+          {
+            "id": "M1",
+            "text": "Each patch gets ninety texture features. Supervised models learn defects. Anomaly detectors learn only normal fabric."
+          },
+          {
+            "id": "M2",
+            "text": "Everything is scored three ways, including a deliberately leaky control."
+          }
+        ]
+      },
+      {
+        "id": "explorer",
+        "kind": "explorer",
+        "lines": [
+          {
+            "id": "E1",
+            "text": "This is the results explorer."
+          },
+          {
+            "id": "E2",
+            "text": "For the random forest, patch precision is {rf_ap_grouped} split by strip, and {rf_ap_leaky} with leaky patches. A paired difference of plus {gap}, interval {gap_lo} to {gap_hi}."
+          },
+          {
+            "id": "E3",
+            "text": "On an unseen fabric, nothing clearly beats chance. The best of eight methods scores {unseen}, interval {unseen_lo} to {unseen_hi}."
+          },
+          {
+            "id": "E4",
+            "text": "Every strip can be inspected. Here are the forest's misses."
+          },
+          {
+            "id": "E5",
+            "text": "Some results look good for the wrong reasons. Brightness alone reaches {bright_auc} within one fabric. Those strips were captured differently."
+          }
+        ]
+      },
+      {
+        "id": "limits",
+        "kind": "card",
+        "lines": [
+          {
+            "id": "L1",
+            "text": "The limits are real: one small dataset, {n_fabrics} fabrics, precomputed results, no factory testing."
+          },
+          {
+            "id": "L2",
+            "text": "{margin_strips} of {n_strips} strips also have blank margins."
+          }
+        ]
+      },
+      {
+        "id": "end",
+        "kind": "card",
+        "lines": [
+          {
+            "id": "X1",
+            "text": "Code, tables and the explorer are all open."
+          }
+        ]
+      }
+    ]
+  },
+  "short": {
+    "scenes": [
+      {
+        "id": "hook",
+        "kind": "card",
+        "lines": [
+          {
+            "id": "H1",
+            "text": "The same random forest scored {rf_ap_grouped} or {rf_ap_leaky}, depending only on how the data was split."
+          }
+        ]
+      },
+      {
+        "id": "problem",
+        "kind": "card",
+        "lines": [
+          {
+            "id": "P2",
+            "text": "Split by patch, and neighbours leak. So I split by whole strip."
+          }
+        ]
+      },
+      {
+        "id": "explorer",
+        "kind": "explorer",
+        "lines": [
+          {
+            "id": "E3",
+            "text": "On an unseen fabric, nothing clearly beats chance. The best of eight methods scores {unseen}."
+          }
+        ]
+      },
+      {
+        "id": "limits",
+        "kind": "card",
+        "lines": [
+          {
+            "id": "L1",
+            "text": "One small dataset, {n_fabrics} fabrics, precomputed results."
+          }
+        ]
+      },
+      {
+        "id": "end",
+        "kind": "card",
+        "lines": [
+          {
+            "id": "X1",
+            "text": "Code, tables and the explorer are all open."
+          }
+        ]
+      }
+    ]
+  }
+}

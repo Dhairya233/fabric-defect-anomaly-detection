@@ -1,0 +1,31 @@
+1
+00:00:00,600 --> 00:00:04,455
+The same random forest scored 0.23 or 0.68,
+
+2
+00:00:04,455 --> 00:00:08,131
+depending only on how the data was split.
+
+3
+00:00:09,631 --> 00:00:11,675
+Split by patch, and neighbours leak.
+
+4
+00:00:11,675 --> 00:00:13,151
+So I split by whole strip.
+
+5
+00:00:14,651 --> 00:00:18,408
+On an unseen fabric, nothing clearly beats chance.
+
+6
+00:00:18,408 --> 00:00:21,264
+The best of eight methods scores 0.59.
+
+7
+00:00:22,764 --> 00:00:26,369
+One small dataset, 7 fabrics, precomputed results.
+
+8
+00:00:27,869 --> 00:00:30,600
+Code, tables and the explorer are all open.
