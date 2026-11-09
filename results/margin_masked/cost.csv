@@ -1,0 +1,10 @@
+method,fit_seconds_per_fold,score_ms_per_patch,feature_extraction_s_per_strip,total_ms_per_strip,cpu,cpu_cores_available
+M0 always clean,0.0000,0.0000,0.0000,0.0006,x86_64,1
+M0 raw contrast,0.0000,0.0000,0.0000,0.0003,x86_64,1
+M0 brightness deviation,0.0001,0.0000,0.0000,0.0006,x86_64,1
+M1 random forest,6.1265,0.0388,3.1703,3171.5328,x86_64,1
+M1 SVM (RBF),3.0079,0.2089,3.1703,3176.8052,x86_64,1
+M2 Mahalanobis (global),0.0091,0.0047,3.1703,3170.4786,x86_64,1
+M2 Mahalanobis (per fabric),0.0286,0.0082,3.1703,3170.5847,x86_64,1
+M2 isolation forest (global),0.5313,0.0425,3.1703,3171.6482,x86_64,1
+M2 one-class SVM (global),0.0481,0.0165,3.1703,3170.8418,x86_64,1

@@ -1,0 +1,8 @@
+fabric,n_clean,n_defective,clean_mean_brightness,clean_sd_across_strips,defective_mean_brightness,defective_sd_across_strips,auroc_brightness,auroc_contrast,in_artefact_free_subset
+00,20,7,76.707,2.848,85.873,18.458,0.586,0.586,False
+01,20,12,110.194,0.588,119.180,17.333,0.833,0.725,False
+02,20,38,119.610,0.792,124.236,5.065,0.782,0.767,False
+03,20,31,83.729,1.165,83.179,3.810,0.482,0.519,True
+04,20,10,126.926,1.027,125.971,0.959,0.255,0.260,True
+05,20,1,106.457,1.394,127.932,,1.000,1.000,False
+06,20,6,128.843,0.952,129.060,1.043,0.542,0.467,True

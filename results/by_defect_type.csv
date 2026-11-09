@@ -1,0 +1,313 @@
+split,method,defect_code,defect,n_defective,n_clean,auroc,auroc_lo,auroc_hi,recall,recall_lo,recall_hi,false_alarm_rate,false_alarm_rate_lo,false_alarm_rate_hi,reliable
+grouped,M0 always clean,2,broken end,9,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+grouped,M0 always clean,6,broken yarn,8,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+grouped,M0 always clean,10,broken pick,10,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+grouped,M0 always clean,16,weft curling,3,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,False
+grouped,M0 always clean,19,fuzzyball,39,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+grouped,M0 always clean,22,cut selvage,9,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+grouped,M0 always clean,23,crease,5,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+grouped,M0 always clean,25,warp ball,5,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+grouped,M0 always clean,27,knots,1,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,False
+grouped,M0 always clean,29,contamination,1,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,False
+grouped,M0 always clean,30,nep,14,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+grouped,M0 always clean,36,weft crack,1,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,False
+grouped,M0 raw contrast,2,broken end,9,140,0.4817,0.2834,0.6866,0.8889,0.6667,1.0000,0.7786,0.7097,0.8454,True
+grouped,M0 raw contrast,6,broken yarn,8,140,0.2759,0.1956,0.3512,1.0000,1.0000,1.0000,0.7786,0.7148,0.8546,True
+grouped,M0 raw contrast,10,broken pick,10,140,0.8007,0.7250,0.8728,1.0000,1.0000,1.0000,0.7786,0.7081,0.8521,True
+grouped,M0 raw contrast,16,weft curling,3,140,0.7857,0.7113,0.8512,1.0000,1.0000,1.0000,0.7786,0.7086,0.8429,False
+grouped,M0 raw contrast,19,fuzzyball,39,140,0.3452,0.2506,0.4239,0.7179,0.5630,0.8529,0.7786,0.7093,0.8513,True
+grouped,M0 raw contrast,22,cut selvage,9,140,0.6611,0.3890,0.9019,0.7778,0.5000,1.0000,0.7786,0.7143,0.8515,True
+grouped,M0 raw contrast,23,crease,5,140,0.5486,0.3411,0.7955,1.0000,1.0000,1.0000,0.7786,0.7092,0.8488,True
+grouped,M0 raw contrast,25,warp ball,5,140,0.7543,0.6198,0.8538,1.0000,1.0000,1.0000,0.7786,0.7092,0.8488,True
+grouped,M0 raw contrast,27,knots,1,140,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.7786,0.7049,0.8460,False
+grouped,M0 raw contrast,29,contamination,1,140,0.0286,0.0071,0.0576,0.0000,0.0000,0.0000,0.7786,0.7049,0.8460,False
+grouped,M0 raw contrast,30,nep,14,140,0.3939,0.2374,0.5709,0.7143,0.4545,0.9231,0.7786,0.7071,0.8442,True
+grouped,M0 raw contrast,36,weft crack,1,140,0.2857,0.2152,0.3614,1.0000,1.0000,1.0000,0.7786,0.7049,0.8460,False
+grouped,M0 brightness deviation,2,broken end,9,140,0.4627,0.2857,0.6513,1.0000,1.0000,1.0000,0.9071,0.8566,0.9507,True
+grouped,M0 brightness deviation,6,broken yarn,8,140,0.0411,0.0116,0.0871,0.1250,0.0000,0.4092,0.9071,0.8510,0.9498,True
+grouped,M0 brightness deviation,10,broken pick,10,140,0.7771,0.6813,0.8790,1.0000,1.0000,1.0000,0.9071,0.8561,0.9496,True
+grouped,M0 brightness deviation,16,weft curling,3,140,0.8714,0.8259,0.9174,1.0000,1.0000,1.0000,0.9071,0.8566,0.9504,False
+grouped,M0 brightness deviation,19,fuzzyball,39,140,0.3526,0.2492,0.4513,0.7179,0.5781,0.8493,0.9071,0.8638,0.9549,True
+grouped,M0 brightness deviation,22,cut selvage,9,140,0.5992,0.3969,0.8208,1.0000,1.0000,1.0000,0.9071,0.8587,0.9557,True
+grouped,M0 brightness deviation,23,crease,5,140,0.5900,0.4461,0.7543,1.0000,1.0000,1.0000,0.9071,0.8521,0.9500,True
+grouped,M0 brightness deviation,25,warp ball,5,140,0.7514,0.6012,0.9090,1.0000,1.0000,1.0000,0.9071,0.8521,0.9500,True
+grouped,M0 brightness deviation,27,knots,1,140,0.0857,0.0432,0.1361,0.0000,0.0000,0.0000,0.9071,0.8505,0.9504,False
+grouped,M0 brightness deviation,29,contamination,1,140,0.0071,0.0000,0.0216,0.0000,0.0000,0.0000,0.9071,0.8505,0.9504,False
+grouped,M0 brightness deviation,30,nep,14,140,0.3526,0.1605,0.5441,0.7143,0.4492,0.9311,0.9071,0.8618,0.9510,True
+grouped,M0 brightness deviation,36,weft crack,1,140,0.2429,0.1734,0.3184,1.0000,1.0000,1.0000,0.9071,0.8505,0.9504,False
+grouped,M1 random forest,2,broken end,9,140,0.8413,0.7312,0.9246,0.5556,0.2222,0.8889,0.2429,0.1734,0.3143,True
+grouped,M1 random forest,6,broken yarn,8,140,0.9536,0.8465,1.0000,0.8750,0.5714,1.0000,0.2429,0.1667,0.3118,True
+grouped,M1 random forest,10,broken pick,10,140,0.9571,0.9142,0.9904,1.0000,1.0000,1.0000,0.2429,0.1726,0.3108,True
+grouped,M1 random forest,16,weft curling,3,140,0.9976,0.9858,1.0000,1.0000,1.0000,1.0000,0.2429,0.1690,0.3213,False
+grouped,M1 random forest,19,fuzzyball,39,140,0.8507,0.7931,0.9020,0.7179,0.5731,0.8571,0.2429,0.1792,0.3169,True
+grouped,M1 random forest,22,cut selvage,9,140,0.8595,0.7556,0.9549,0.7778,0.5000,1.0000,0.2429,0.1708,0.3096,True
+grouped,M1 random forest,23,crease,5,140,0.9557,0.9160,0.9913,1.0000,1.0000,1.0000,0.2429,0.1745,0.3096,True
+grouped,M1 random forest,25,warp ball,5,140,0.8900,0.7825,0.9824,0.6000,0.0000,1.0000,0.2429,0.1745,0.3096,True
+grouped,M1 random forest,27,knots,1,140,0.7857,0.7187,0.8493,1.0000,1.0000,1.0000,0.2429,0.1702,0.3237,False
+grouped,M1 random forest,29,contamination,1,140,0.9714,0.9421,0.9929,1.0000,1.0000,1.0000,0.2429,0.1702,0.3237,False
+grouped,M1 random forest,30,nep,14,140,0.8954,0.8198,0.9513,0.7143,0.4706,0.9231,0.2429,0.1739,0.3182,True
+grouped,M1 random forest,36,weft crack,1,140,0.3929,0.3214,0.4691,0.0000,0.0000,0.0000,0.2429,0.1702,0.3237,False
+grouped,M1 SVM (RBF),2,broken end,9,140,0.5849,0.3570,0.7953,0.2222,0.0000,0.5455,0.2429,0.1760,0.3080,True
+grouped,M1 SVM (RBF),6,broken yarn,8,140,0.9598,0.9087,0.9953,0.8750,0.5843,1.0000,0.2429,0.1696,0.3123,True
+grouped,M1 SVM (RBF),10,broken pick,10,140,0.9500,0.8968,0.9892,1.0000,1.0000,1.0000,0.2429,0.1672,0.3118,True
+grouped,M1 SVM (RBF),16,weft curling,3,140,0.9643,0.8720,1.0000,1.0000,1.0000,1.0000,0.2429,0.1696,0.3227,False
+grouped,M1 SVM (RBF),19,fuzzyball,39,140,0.7128,0.6212,0.7926,0.4359,0.2727,0.6000,0.2429,0.1786,0.3139,True
+grouped,M1 SVM (RBF),22,cut selvage,9,140,0.7690,0.5824,0.9314,0.6667,0.3333,1.0000,0.2429,0.1773,0.3190,True
+grouped,M1 SVM (RBF),23,crease,5,140,0.8514,0.6181,1.0000,0.6000,0.0000,1.0000,0.2429,0.1696,0.3139,True
+grouped,M1 SVM (RBF),25,warp ball,5,140,0.9786,0.9390,1.0000,1.0000,1.0000,1.0000,0.2429,0.1696,0.3139,True
+grouped,M1 SVM (RBF),27,knots,1,140,0.5143,0.4377,0.5910,0.0000,0.0000,0.0000,0.2429,0.1714,0.3130,False
+grouped,M1 SVM (RBF),29,contamination,1,140,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.2429,0.1714,0.3130,False
+grouped,M1 SVM (RBF),30,nep,14,140,0.8913,0.7740,0.9837,0.7857,0.5589,1.0000,0.2429,0.1708,0.3179,True
+grouped,M1 SVM (RBF),36,weft crack,1,140,0.1929,0.1234,0.2650,0.0000,0.0000,0.0000,0.2429,0.1714,0.3130,False
+grouped,M2 Mahalanobis (global),2,broken end,9,140,0.9627,0.9230,0.9880,0.8889,0.6119,1.0000,0.2000,0.1324,0.2751,True
+grouped,M2 Mahalanobis (global),6,broken yarn,8,140,0.9938,0.9787,1.0000,1.0000,1.0000,1.0000,0.2000,0.1377,0.2695,True
+grouped,M2 Mahalanobis (global),10,broken pick,10,140,0.4807,0.2885,0.7206,0.2000,0.0000,0.5000,0.2000,0.1367,0.2681,True
+grouped,M2 Mahalanobis (global),16,weft curling,3,140,0.9286,0.8801,0.9646,1.0000,1.0000,1.0000,0.2000,0.1429,0.2734,False
+grouped,M2 Mahalanobis (global),19,fuzzyball,39,140,0.7220,0.6159,0.8117,0.5128,0.3521,0.6579,0.2000,0.1374,0.2693,True
+grouped,M2 Mahalanobis (global),22,cut selvage,9,140,0.3175,0.1357,0.5303,0.0000,0.0000,0.0000,0.2000,0.1392,0.2664,True
+grouped,M2 Mahalanobis (global),23,crease,5,140,0.9529,0.9044,0.9924,0.6000,0.0000,1.0000,0.2000,0.1328,0.2667,True
+grouped,M2 Mahalanobis (global),25,warp ball,5,140,0.4957,0.1311,0.9674,0.2000,0.0000,0.6667,0.2000,0.1328,0.2667,True
+grouped,M2 Mahalanobis (global),27,knots,1,140,0.9714,0.9424,0.9929,1.0000,1.0000,1.0000,0.2000,0.1348,0.2688,False
+grouped,M2 Mahalanobis (global),29,contamination,1,140,0.9357,0.8955,0.9740,1.0000,1.0000,1.0000,0.2000,0.1348,0.2688,False
+grouped,M2 Mahalanobis (global),30,nep,14,140,0.7444,0.5570,0.9178,0.5000,0.2222,0.7819,0.2000,0.1392,0.2711,True
+grouped,M2 Mahalanobis (global),36,weft crack,1,140,0.9929,0.9784,1.0000,1.0000,1.0000,1.0000,0.2000,0.1348,0.2688,False
+grouped,M2 Mahalanobis (per fabric),2,broken end,9,140,1.0000,1.0000,1.0000,0.7778,0.4286,1.0000,0.0071,0.0000,0.0220,True
+grouped,M2 Mahalanobis (per fabric),6,broken yarn,8,140,1.0000,1.0000,1.0000,0.8750,0.5714,1.0000,0.0071,0.0000,0.0218,True
+grouped,M2 Mahalanobis (per fabric),10,broken pick,10,140,0.9457,0.8803,1.0000,0.3000,0.0000,0.6000,0.0071,0.0000,0.0253,True
+grouped,M2 Mahalanobis (per fabric),16,weft curling,3,140,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.0071,0.0000,0.0217,False
+grouped,M2 Mahalanobis (per fabric),19,fuzzyball,39,140,0.8982,0.8445,0.9431,0.4359,0.2834,0.5789,0.0071,0.0000,0.0219,True
+grouped,M2 Mahalanobis (per fabric),22,cut selvage,9,140,0.7738,0.5818,0.9428,0.1111,0.0000,0.4000,0.0071,0.0000,0.0221,True
+grouped,M2 Mahalanobis (per fabric),23,crease,5,140,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.0071,0.0000,0.0216,True
+grouped,M2 Mahalanobis (per fabric),25,warp ball,5,140,0.8771,0.7410,0.9871,0.2000,0.0000,0.6667,0.0071,0.0000,0.0216,True
+grouped,M2 Mahalanobis (per fabric),27,knots,1,140,1.0000,1.0000,1.0000,0.0000,0.0000,0.0000,0.0071,0.0000,0.0216,False
+grouped,M2 Mahalanobis (per fabric),29,contamination,1,140,0.9857,0.9642,1.0000,1.0000,1.0000,1.0000,0.0071,0.0000,0.0216,False
+grouped,M2 Mahalanobis (per fabric),30,nep,14,140,0.9770,0.9452,0.9967,0.6429,0.3602,0.8889,0.0071,0.0000,0.0226,True
+grouped,M2 Mahalanobis (per fabric),36,weft crack,1,140,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.0071,0.0000,0.0216,False
+grouped,M2 isolation forest (global),2,broken end,9,140,0.4063,0.2925,0.5311,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+grouped,M2 isolation forest (global),6,broken yarn,8,140,0.1920,0.1056,0.2830,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+grouped,M2 isolation forest (global),10,broken pick,10,140,0.3129,0.1992,0.4266,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+grouped,M2 isolation forest (global),16,weft curling,3,140,0.5381,0.4618,0.6286,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+grouped,M2 isolation forest (global),19,fuzzyball,39,140,0.3927,0.3006,0.4915,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+grouped,M2 isolation forest (global),22,cut selvage,9,140,0.2397,0.1216,0.3465,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+grouped,M2 isolation forest (global),23,crease,5,140,0.7800,0.6231,0.9374,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+grouped,M2 isolation forest (global),25,warp ball,5,140,0.2157,0.1009,0.3350,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+grouped,M2 isolation forest (global),27,knots,1,140,0.0214,0.0000,0.0504,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+grouped,M2 isolation forest (global),29,contamination,1,140,0.5357,0.4532,0.6214,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+grouped,M2 isolation forest (global),30,nep,14,140,0.1913,0.0993,0.2857,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+grouped,M2 isolation forest (global),36,weft crack,1,140,0.0143,0.0000,0.0360,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+grouped,M2 one-class SVM (global),2,broken end,9,140,0.9270,0.8612,0.9763,1.0000,1.0000,1.0000,0.2714,0.2029,0.3441,True
+grouped,M2 one-class SVM (global),6,broken yarn,8,140,0.9554,0.9184,0.9867,1.0000,1.0000,1.0000,0.2714,0.1986,0.3525,True
+grouped,M2 one-class SVM (global),10,broken pick,10,140,0.4707,0.3102,0.6717,0.3000,0.0000,0.6000,0.2714,0.1956,0.3526,True
+grouped,M2 one-class SVM (global),16,weft curling,3,140,0.7905,0.7232,0.8521,1.0000,1.0000,1.0000,0.2714,0.2014,0.3491,False
+grouped,M2 one-class SVM (global),19,fuzzyball,39,140,0.7130,0.6134,0.8088,0.6154,0.4624,0.7564,0.2714,0.2021,0.3405,True
+grouped,M2 one-class SVM (global),22,cut selvage,9,140,0.3333,0.1712,0.5162,0.2222,0.0000,0.5000,0.2714,0.1978,0.3513,True
+grouped,M2 one-class SVM (global),23,crease,5,140,0.9443,0.9046,0.9787,1.0000,1.0000,1.0000,0.2714,0.1986,0.3549,True
+grouped,M2 one-class SVM (global),25,warp ball,5,140,0.6143,0.3019,0.9778,0.4000,0.0000,1.0000,0.2714,0.1986,0.3549,True
+grouped,M2 one-class SVM (global),27,knots,1,140,0.8929,0.8357,0.9496,1.0000,1.0000,1.0000,0.2714,0.2021,0.3393,False
+grouped,M2 one-class SVM (global),29,contamination,1,140,0.9429,0.9057,0.9784,1.0000,1.0000,1.0000,0.2714,0.2021,0.3393,False
+grouped,M2 one-class SVM (global),30,nep,14,140,0.7077,0.5166,0.8522,0.6429,0.3426,0.8667,0.2714,0.2035,0.3534,True
+grouped,M2 one-class SVM (global),36,weft crack,1,140,0.9571,0.9209,0.9857,1.0000,1.0000,1.0000,0.2714,0.2021,0.3393,False
+lofo,M0 always clean,2,broken end,9,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+lofo,M0 always clean,6,broken yarn,8,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+lofo,M0 always clean,10,broken pick,10,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+lofo,M0 always clean,16,weft curling,3,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,False
+lofo,M0 always clean,19,fuzzyball,39,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+lofo,M0 always clean,22,cut selvage,9,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+lofo,M0 always clean,23,crease,5,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+lofo,M0 always clean,25,warp ball,5,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+lofo,M0 always clean,27,knots,1,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,False
+lofo,M0 always clean,29,contamination,1,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,False
+lofo,M0 always clean,30,nep,14,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+lofo,M0 always clean,36,weft crack,1,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,False
+lofo,M0 raw contrast,2,broken end,9,140,0.4817,0.2834,0.6866,1.0000,1.0000,1.0000,0.9000,0.8462,0.9435,True
+lofo,M0 raw contrast,6,broken yarn,8,140,0.2759,0.1956,0.3512,1.0000,1.0000,1.0000,0.9000,0.8541,0.9496,True
+lofo,M0 raw contrast,10,broken pick,10,140,0.8007,0.7250,0.8728,1.0000,1.0000,1.0000,0.9000,0.8516,0.9505,True
+lofo,M0 raw contrast,16,weft curling,3,140,0.7857,0.7113,0.8512,1.0000,1.0000,1.0000,0.9000,0.8500,0.9493,False
+lofo,M0 raw contrast,19,fuzzyball,39,140,0.3452,0.2506,0.4239,0.8974,0.7973,0.9767,0.9000,0.8467,0.9483,True
+lofo,M0 raw contrast,22,cut selvage,9,140,0.6611,0.3890,0.9019,0.7778,0.5000,1.0000,0.9000,0.8541,0.9502,True
+lofo,M0 raw contrast,23,crease,5,140,0.5486,0.3411,0.7955,1.0000,1.0000,1.0000,0.9000,0.8494,0.9458,True
+lofo,M0 raw contrast,25,warp ball,5,140,0.7543,0.6198,0.8538,1.0000,1.0000,1.0000,0.9000,0.8494,0.9458,True
+lofo,M0 raw contrast,27,knots,1,140,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.9000,0.8489,0.9496,False
+lofo,M0 raw contrast,29,contamination,1,140,0.0286,0.0071,0.0576,1.0000,1.0000,1.0000,0.9000,0.8489,0.9496,False
+lofo,M0 raw contrast,30,nep,14,140,0.3939,0.2374,0.5709,0.8571,0.6250,1.0000,0.9000,0.8478,0.9469,True
+lofo,M0 raw contrast,36,weft crack,1,140,0.2857,0.2152,0.3614,1.0000,1.0000,1.0000,0.9000,0.8489,0.9496,False
+lofo,M0 brightness deviation,2,broken end,9,140,0.5151,0.3078,0.7305,0.7778,0.5000,1.0000,0.8786,0.8239,0.9286,True
+lofo,M0 brightness deviation,6,broken yarn,8,140,0.0437,0.0122,0.0910,0.0000,0.0000,0.0000,0.8786,0.8169,0.9298,True
+lofo,M0 brightness deviation,10,broken pick,10,140,0.7857,0.7331,0.8417,1.0000,1.0000,1.0000,0.8786,0.8195,0.9306,True
+lofo,M0 brightness deviation,16,weft curling,3,140,0.7857,0.7252,0.8435,1.0000,1.0000,1.0000,0.8786,0.8195,0.9281,False
+lofo,M0 brightness deviation,19,fuzzyball,39,140,0.3328,0.2380,0.4267,0.6410,0.4843,0.7826,0.8786,0.8299,0.9308,True
+lofo,M0 brightness deviation,22,cut selvage,9,140,0.6444,0.4189,0.8451,1.0000,1.0000,1.0000,0.8786,0.8227,0.9289,True
+lofo,M0 brightness deviation,23,crease,5,140,0.5471,0.4364,0.6493,1.0000,1.0000,1.0000,0.8786,0.8214,0.9286,True
+lofo,M0 brightness deviation,25,warp ball,5,140,0.7857,0.7200,0.8463,1.0000,1.0000,1.0000,0.8786,0.8214,0.9286,True
+lofo,M0 brightness deviation,27,knots,1,140,0.0643,0.0288,0.1103,0.0000,0.0000,0.0000,0.8786,0.8227,0.9321,False
+lofo,M0 brightness deviation,29,contamination,1,140,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.8786,0.8227,0.9321,False
+lofo,M0 brightness deviation,30,nep,14,140,0.3607,0.1732,0.5580,0.5714,0.3000,0.8333,0.8786,0.8275,0.9322,True
+lofo,M0 brightness deviation,36,weft crack,1,140,0.2786,0.2081,0.3512,0.0000,0.0000,0.0000,0.8786,0.8227,0.9321,False
+lofo,M1 random forest,2,broken end,9,140,0.3175,0.1550,0.5242,0.2222,0.0000,0.5000,0.3643,0.2867,0.4492,True
+lofo,M1 random forest,6,broken yarn,8,140,0.4161,0.2926,0.5863,1.0000,1.0000,1.0000,0.3643,0.2856,0.4468,True
+lofo,M1 random forest,10,broken pick,10,140,0.2886,0.1771,0.4112,0.0000,0.0000,0.0000,0.3643,0.2861,0.4507,True
+lofo,M1 random forest,16,weft curling,3,140,0.5119,0.4304,0.6005,0.0000,0.0000,0.0000,0.3643,0.2892,0.4437,False
+lofo,M1 random forest,19,fuzzyball,39,140,0.4875,0.3931,0.5797,0.7436,0.6000,0.8788,0.3643,0.2831,0.4425,True
+lofo,M1 random forest,22,cut selvage,9,140,0.5833,0.4184,0.7319,0.4444,0.1250,0.8000,0.3643,0.2799,0.4379,True
+lofo,M1 random forest,23,crease,5,140,0.6314,0.4153,0.9027,1.0000,1.0000,1.0000,0.3643,0.2871,0.4429,True
+lofo,M1 random forest,25,warp ball,5,140,0.2314,0.1458,0.3232,0.0000,0.0000,0.0000,0.3643,0.2871,0.4429,True
+lofo,M1 random forest,27,knots,1,140,0.7786,0.7110,0.8429,0.0000,0.0000,0.0000,0.3643,0.2837,0.4468,False
+lofo,M1 random forest,29,contamination,1,140,0.6357,0.5585,0.7305,0.0000,0.0000,0.0000,0.3643,0.2837,0.4468,False
+lofo,M1 random forest,30,nep,14,140,0.4362,0.3015,0.5868,0.4286,0.1538,0.6963,0.3643,0.2950,0.4389,True
+lofo,M1 random forest,36,weft crack,1,140,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.3643,0.2837,0.4468,False
+lofo,M1 SVM (RBF),2,broken end,9,140,0.1984,0.1249,0.2773,0.0000,0.0000,0.0000,0.6214,0.5432,0.6997,True
+lofo,M1 SVM (RBF),6,broken yarn,8,140,0.5295,0.3957,0.6877,1.0000,1.0000,1.0000,0.6214,0.5382,0.7019,True
+lofo,M1 SVM (RBF),10,broken pick,10,140,0.4521,0.3703,0.5396,0.8000,0.5000,1.0000,0.6214,0.5404,0.6940,True
+lofo,M1 SVM (RBF),16,weft curling,3,140,0.3310,0.2465,0.4090,0.0000,0.0000,0.0000,0.6214,0.5428,0.7032,False
+lofo,M1 SVM (RBF),19,fuzzyball,39,140,0.5174,0.4277,0.5967,0.7179,0.5758,0.8631,0.6214,0.5401,0.6929,True
+lofo,M1 SVM (RBF),22,cut selvage,9,140,0.5873,0.4070,0.7694,0.6667,0.3477,1.0000,0.6214,0.5387,0.7008,True
+lofo,M1 SVM (RBF),23,crease,5,140,0.2457,0.1560,0.3420,0.0000,0.0000,0.0000,0.6214,0.5352,0.7029,True
+lofo,M1 SVM (RBF),25,warp ball,5,140,0.5314,0.4367,0.6248,1.0000,1.0000,1.0000,0.6214,0.5352,0.7029,True
+lofo,M1 SVM (RBF),27,knots,1,140,0.5929,0.5094,0.6732,1.0000,1.0000,1.0000,0.6214,0.5429,0.7026,False
+lofo,M1 SVM (RBF),29,contamination,1,140,0.8429,0.7786,0.9071,1.0000,1.0000,1.0000,0.6214,0.5429,0.7026,False
+lofo,M1 SVM (RBF),30,nep,14,140,0.4862,0.3539,0.6095,0.6429,0.3549,0.8947,0.6214,0.5376,0.6893,True
+lofo,M1 SVM (RBF),36,weft crack,1,140,0.6786,0.5971,0.7626,1.0000,1.0000,1.0000,0.6214,0.5429,0.7026,False
+lofo,M2 Mahalanobis (global),2,broken end,9,140,0.5635,0.4346,0.6635,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 Mahalanobis (global),6,broken yarn,8,140,0.7286,0.6267,0.8139,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 Mahalanobis (global),10,broken pick,10,140,0.5307,0.4037,0.6728,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 Mahalanobis (global),16,weft curling,3,140,0.6000,0.5182,0.6857,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+lofo,M2 Mahalanobis (global),19,fuzzyball,39,140,0.4024,0.3086,0.4956,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 Mahalanobis (global),22,cut selvage,9,140,0.4151,0.3148,0.5177,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 Mahalanobis (global),23,crease,5,140,0.4714,0.1765,0.8602,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 Mahalanobis (global),25,warp ball,5,140,0.6129,0.3290,0.9778,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 Mahalanobis (global),27,knots,1,140,0.8857,0.8357,0.9379,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+lofo,M2 Mahalanobis (global),29,contamination,1,140,0.6000,0.5181,0.6786,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+lofo,M2 Mahalanobis (global),30,nep,14,140,0.5531,0.4611,0.6531,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 Mahalanobis (global),36,weft crack,1,140,0.6000,0.5181,0.6786,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+lofo,M2 isolation forest (global),2,broken end,9,140,0.3540,0.2580,0.4702,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 isolation forest (global),6,broken yarn,8,140,0.1080,0.0117,0.2312,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 isolation forest (global),10,broken pick,10,140,0.2368,0.1171,0.3568,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 isolation forest (global),16,weft curling,3,140,0.3571,0.2760,0.4482,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+lofo,M2 isolation forest (global),19,fuzzyball,39,140,0.3520,0.2640,0.4478,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 isolation forest (global),22,cut selvage,9,140,0.2413,0.1390,0.3346,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 isolation forest (global),23,crease,5,140,0.7429,0.5865,0.9276,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 isolation forest (global),25,warp ball,5,140,0.1207,0.0532,0.1942,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 isolation forest (global),27,knots,1,140,0.0000,0.0000,0.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+lofo,M2 isolation forest (global),29,contamination,1,140,0.4929,0.4018,0.5683,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+lofo,M2 isolation forest (global),30,nep,14,140,0.1352,0.0585,0.2339,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 isolation forest (global),36,weft crack,1,140,0.0071,0.0000,0.0216,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+lofo,M2 one-class SVM (global),2,broken end,9,140,0.5524,0.4371,0.6424,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 one-class SVM (global),6,broken yarn,8,140,0.6464,0.5367,0.7455,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 one-class SVM (global),10,broken pick,10,140,0.4814,0.3867,0.5782,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 one-class SVM (global),16,weft curling,3,140,0.5786,0.4964,0.6628,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+lofo,M2 one-class SVM (global),19,fuzzyball,39,140,0.4725,0.3698,0.5698,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 one-class SVM (global),22,cut selvage,9,140,0.1976,0.0699,0.3502,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 one-class SVM (global),23,crease,5,140,0.6157,0.4248,0.8532,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 one-class SVM (global),25,warp ball,5,140,0.5414,0.4274,0.6705,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 one-class SVM (global),27,knots,1,140,0.6000,0.5181,0.6786,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+lofo,M2 one-class SVM (global),29,contamination,1,140,0.8571,0.7929,0.9139,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+lofo,M2 one-class SVM (global),30,nep,14,140,0.5429,0.4312,0.6456,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+lofo,M2 one-class SVM (global),36,weft crack,1,140,0.6000,0.5181,0.6786,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+leaky,M0 always clean,2,broken end,9,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+leaky,M0 always clean,6,broken yarn,8,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+leaky,M0 always clean,10,broken pick,10,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+leaky,M0 always clean,16,weft curling,3,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,False
+leaky,M0 always clean,19,fuzzyball,39,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+leaky,M0 always clean,22,cut selvage,9,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+leaky,M0 always clean,23,crease,5,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+leaky,M0 always clean,25,warp ball,5,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+leaky,M0 always clean,27,knots,1,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,False
+leaky,M0 always clean,29,contamination,1,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,False
+leaky,M0 always clean,30,nep,14,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,True
+leaky,M0 always clean,36,weft crack,1,140,0.5000,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,False
+leaky,M0 raw contrast,2,broken end,9,140,0.4817,0.2834,0.6866,0.5556,0.2000,0.8750,0.7143,0.6441,0.7865,True
+leaky,M0 raw contrast,6,broken yarn,8,140,0.2759,0.1956,0.3512,0.8750,0.5714,1.0000,0.7143,0.6396,0.7913,True
+leaky,M0 raw contrast,10,broken pick,10,140,0.8007,0.7250,0.8728,1.0000,1.0000,1.0000,0.7143,0.6400,0.7993,True
+leaky,M0 raw contrast,16,weft curling,3,140,0.7857,0.7113,0.8512,1.0000,1.0000,1.0000,0.7143,0.6272,0.7872,False
+leaky,M0 raw contrast,19,fuzzyball,39,140,0.3452,0.2506,0.4239,0.6667,0.5000,0.8095,0.7143,0.6411,0.7942,True
+leaky,M0 raw contrast,22,cut selvage,9,140,0.6611,0.3890,0.9019,0.7778,0.5000,1.0000,0.7143,0.6510,0.7852,True
+leaky,M0 raw contrast,23,crease,5,140,0.5486,0.3411,0.7955,1.0000,1.0000,1.0000,0.7143,0.6377,0.7972,True
+leaky,M0 raw contrast,25,warp ball,5,140,0.7543,0.6198,0.8538,1.0000,1.0000,1.0000,0.7143,0.6377,0.7972,True
+leaky,M0 raw contrast,27,knots,1,140,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.7143,0.6383,0.7850,False
+leaky,M0 raw contrast,29,contamination,1,140,0.0286,0.0071,0.0576,0.0000,0.0000,0.0000,0.7143,0.6383,0.7850,False
+leaky,M0 raw contrast,30,nep,14,140,0.3939,0.2374,0.5709,0.6429,0.4000,0.8947,0.7143,0.6353,0.7885,True
+leaky,M0 raw contrast,36,weft crack,1,140,0.2857,0.2152,0.3614,1.0000,1.0000,1.0000,0.7143,0.6383,0.7850,False
+leaky,M0 brightness deviation,2,broken end,9,140,0.4373,0.2744,0.6133,1.0000,1.0000,1.0000,0.8857,0.8304,0.9357,True
+leaky,M0 brightness deviation,6,broken yarn,8,140,0.0455,0.0162,0.0935,0.0000,0.0000,0.0000,0.8857,0.8262,0.9355,True
+leaky,M0 brightness deviation,10,broken pick,10,140,0.8186,0.7476,0.8759,1.0000,1.0000,1.0000,0.8857,0.8243,0.9353,True
+leaky,M0 brightness deviation,16,weft curling,3,140,0.7929,0.6408,0.8867,1.0000,1.0000,1.0000,0.8857,0.8279,0.9301,False
+leaky,M0 brightness deviation,19,fuzzyball,39,140,0.3397,0.2411,0.4323,0.6667,0.5077,0.8000,0.8857,0.8408,0.9369,True
+leaky,M0 brightness deviation,22,cut selvage,9,140,0.6460,0.4386,0.8421,1.0000,1.0000,1.0000,0.8857,0.8327,0.9357,True
+leaky,M0 brightness deviation,23,crease,5,140,0.6171,0.4729,0.7656,1.0000,1.0000,1.0000,0.8857,0.8291,0.9350,True
+leaky,M0 brightness deviation,25,warp ball,5,140,0.8571,0.8190,0.8907,1.0000,1.0000,1.0000,0.8857,0.8291,0.9350,True
+leaky,M0 brightness deviation,27,knots,1,140,0.0857,0.0432,0.1361,0.0000,0.0000,0.0000,0.8857,0.8357,0.9362,False
+leaky,M0 brightness deviation,29,contamination,1,140,0.0071,0.0000,0.0216,0.0000,0.0000,0.0000,0.8857,0.8357,0.9362,False
+leaky,M0 brightness deviation,30,nep,14,140,0.3230,0.1544,0.4936,0.5714,0.3000,0.8401,0.8857,0.8351,0.9366,True
+leaky,M0 brightness deviation,36,weft crack,1,140,0.2429,0.1734,0.3184,1.0000,1.0000,1.0000,0.8857,0.8357,0.9362,False
+leaky,M1 random forest,2,broken end,9,140,0.8683,0.7563,0.9583,0.7778,0.5000,1.0000,0.1786,0.1135,0.2383,True
+leaky,M1 random forest,6,broken yarn,8,140,0.9875,0.9528,1.0000,1.0000,1.0000,1.0000,0.1786,0.1174,0.2393,True
+leaky,M1 random forest,10,broken pick,10,140,0.9971,0.9901,1.0000,1.0000,1.0000,1.0000,0.1786,0.1151,0.2412,True
+leaky,M1 random forest,16,weft curling,3,140,0.9643,0.8873,1.0000,1.0000,1.0000,1.0000,0.1786,0.1182,0.2457,False
+leaky,M1 random forest,19,fuzzyball,39,140,0.8516,0.7920,0.9035,0.5128,0.3600,0.6596,0.1786,0.1213,0.2473,True
+leaky,M1 random forest,22,cut selvage,9,140,0.8944,0.8028,0.9694,0.7778,0.5000,1.0000,0.1786,0.1206,0.2421,True
+leaky,M1 random forest,23,crease,5,140,0.9943,0.9792,1.0000,1.0000,1.0000,1.0000,0.1786,0.1147,0.2376,True
+leaky,M1 random forest,25,warp ball,5,140,0.8629,0.7911,0.9242,0.8000,0.3333,1.0000,0.1786,0.1147,0.2376,True
+leaky,M1 random forest,27,knots,1,140,0.8643,0.8091,0.9137,1.0000,1.0000,1.0000,0.1786,0.1206,0.2411,False
+leaky,M1 random forest,29,contamination,1,140,0.9500,0.9203,0.9786,1.0000,1.0000,1.0000,0.1786,0.1206,0.2411,False
+leaky,M1 random forest,30,nep,14,140,0.9240,0.8534,0.9771,0.8571,0.6542,1.0000,0.1786,0.1139,0.2500,True
+leaky,M1 random forest,36,weft crack,1,140,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.1786,0.1206,0.2411,False
+leaky,M1 SVM (RBF),2,broken end,9,140,0.8341,0.6927,0.9541,0.7778,0.5000,1.0000,0.2143,0.1522,0.2858,True
+leaky,M1 SVM (RBF),6,broken yarn,8,140,0.9661,0.8884,1.0000,0.8750,0.5843,1.0000,0.2143,0.1479,0.2848,True
+leaky,M1 SVM (RBF),10,broken pick,10,140,0.9900,0.9753,1.0000,1.0000,1.0000,1.0000,0.2143,0.1505,0.2807,True
+leaky,M1 SVM (RBF),16,weft curling,3,140,0.9857,0.9571,1.0000,1.0000,1.0000,1.0000,0.2143,0.1555,0.2884,False
+leaky,M1 SVM (RBF),19,fuzzyball,39,140,0.8390,0.7730,0.9004,0.6410,0.4615,0.7727,0.2143,0.1511,0.2874,True
+leaky,M1 SVM (RBF),22,cut selvage,9,140,0.8365,0.7346,0.9379,0.4444,0.1335,0.8000,0.2143,0.1444,0.2853,True
+leaky,M1 SVM (RBF),23,crease,5,140,0.8814,0.7376,1.0000,0.8000,0.4000,1.0000,0.2143,0.1463,0.2842,True
+leaky,M1 SVM (RBF),25,warp ball,5,140,0.9214,0.8403,0.9832,1.0000,1.0000,1.0000,0.2143,0.1463,0.2842,True
+leaky,M1 SVM (RBF),27,knots,1,140,0.7429,0.6706,0.8143,0.0000,0.0000,0.0000,0.2143,0.1489,0.2766,False
+leaky,M1 SVM (RBF),29,contamination,1,140,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.2143,0.1489,0.2766,False
+leaky,M1 SVM (RBF),30,nep,14,140,0.8964,0.8264,0.9569,0.7857,0.5631,1.0000,0.2143,0.1418,0.2792,True
+leaky,M1 SVM (RBF),36,weft crack,1,140,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.2143,0.1489,0.2766,False
+leaky,M2 Mahalanobis (global),2,broken end,9,140,0.9651,0.9286,0.9895,1.0000,1.0000,1.0000,0.6214,0.5387,0.7036,True
+leaky,M2 Mahalanobis (global),6,broken yarn,8,140,0.9938,0.9760,1.0000,1.0000,1.0000,1.0000,0.6214,0.5404,0.6978,True
+leaky,M2 Mahalanobis (global),10,broken pick,10,140,0.4250,0.2336,0.6666,0.6000,0.2670,0.8947,0.6214,0.5483,0.7008,True
+leaky,M2 Mahalanobis (global),16,weft curling,3,140,0.8690,0.8028,0.9263,1.0000,1.0000,1.0000,0.6214,0.5461,0.6901,False
+leaky,M2 Mahalanobis (global),19,fuzzyball,39,140,0.7088,0.6147,0.8033,0.7436,0.5890,0.8766,0.6214,0.5317,0.7011,True
+leaky,M2 Mahalanobis (global),22,cut selvage,9,140,0.3135,0.1212,0.5385,0.2222,0.0000,0.5508,0.6214,0.5425,0.7011,True
+leaky,M2 Mahalanobis (global),23,crease,5,140,0.9529,0.9029,0.9931,1.0000,1.0000,1.0000,0.6214,0.5326,0.6929,True
+leaky,M2 Mahalanobis (global),25,warp ball,5,140,0.4743,0.0988,0.9695,0.4000,0.0000,1.0000,0.6214,0.5326,0.6929,True
+leaky,M2 Mahalanobis (global),27,knots,1,140,0.9786,0.9500,1.0000,1.0000,1.0000,1.0000,0.6214,0.5360,0.6929,False
+leaky,M2 Mahalanobis (global),29,contamination,1,140,0.9357,0.8918,0.9714,1.0000,1.0000,1.0000,0.6214,0.5360,0.6929,False
+leaky,M2 Mahalanobis (global),30,nep,14,140,0.7143,0.5176,0.8924,0.7857,0.5358,1.0000,0.6214,0.5454,0.6954,True
+leaky,M2 Mahalanobis (global),36,weft crack,1,140,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.6214,0.5360,0.6929,False
+leaky,M2 Mahalanobis (per fabric),2,broken end,9,140,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.0286,0.0070,0.0632,True
+leaky,M2 Mahalanobis (per fabric),6,broken yarn,8,140,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.0286,0.0069,0.0571,True
+leaky,M2 Mahalanobis (per fabric),10,broken pick,10,140,0.9179,0.8168,1.0000,0.7000,0.3869,1.0000,0.0286,0.0070,0.0554,True
+leaky,M2 Mahalanobis (per fabric),16,weft curling,3,140,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.0286,0.0070,0.0582,False
+leaky,M2 Mahalanobis (per fabric),19,fuzzyball,39,140,0.8835,0.8189,0.9357,0.6410,0.4890,0.7714,0.0286,0.0069,0.0590,True
+leaky,M2 Mahalanobis (per fabric),22,cut selvage,9,140,0.6849,0.4493,0.9389,0.3333,0.0000,0.6917,0.0286,0.0070,0.0610,True
+leaky,M2 Mahalanobis (per fabric),23,crease,5,140,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.0286,0.0071,0.0580,True
+leaky,M2 Mahalanobis (per fabric),25,warp ball,5,140,0.8043,0.5417,0.9930,0.2000,0.0000,0.6667,0.0286,0.0071,0.0580,True
+leaky,M2 Mahalanobis (per fabric),27,knots,1,140,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.0286,0.0071,0.0576,False
+leaky,M2 Mahalanobis (per fabric),29,contamination,1,140,0.9929,0.9784,1.0000,1.0000,1.0000,1.0000,0.0286,0.0071,0.0576,False
+leaky,M2 Mahalanobis (per fabric),30,nep,14,140,0.9765,0.9412,0.9987,0.7857,0.5358,1.0000,0.0286,0.0069,0.0588,True
+leaky,M2 Mahalanobis (per fabric),36,weft crack,1,140,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0.0286,0.0071,0.0576,False
+leaky,M2 isolation forest (global),2,broken end,9,140,0.3556,0.2383,0.4915,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+leaky,M2 isolation forest (global),6,broken yarn,8,140,0.1964,0.1104,0.2829,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+leaky,M2 isolation forest (global),10,broken pick,10,140,0.3064,0.1971,0.4133,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+leaky,M2 isolation forest (global),16,weft curling,3,140,0.4976,0.4237,0.5857,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+leaky,M2 isolation forest (global),19,fuzzyball,39,140,0.3962,0.3080,0.4932,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+leaky,M2 isolation forest (global),22,cut selvage,9,140,0.2167,0.1037,0.3188,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+leaky,M2 isolation forest (global),23,crease,5,140,0.7586,0.5979,0.9071,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+leaky,M2 isolation forest (global),25,warp ball,5,140,0.1843,0.0809,0.2915,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+leaky,M2 isolation forest (global),27,knots,1,140,0.0000,0.0000,0.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+leaky,M2 isolation forest (global),29,contamination,1,140,0.5429,0.4628,0.6259,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+leaky,M2 isolation forest (global),30,nep,14,140,0.2031,0.1127,0.2970,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,True
+leaky,M2 isolation forest (global),36,weft crack,1,140,0.0929,0.0476,0.1432,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,False
+leaky,M2 one-class SVM (global),2,broken end,9,140,0.8929,0.8120,0.9557,1.0000,1.0000,1.0000,0.3214,0.2454,0.3958,True
+leaky,M2 one-class SVM (global),6,broken yarn,8,140,0.9366,0.8790,0.9854,1.0000,1.0000,1.0000,0.3214,0.2388,0.4043,True
+leaky,M2 one-class SVM (global),10,broken pick,10,140,0.4314,0.2815,0.6301,0.3000,0.0000,0.6000,0.3214,0.2473,0.3952,True
+leaky,M2 one-class SVM (global),16,weft curling,3,140,0.7167,0.6452,0.7863,1.0000,1.0000,1.0000,0.3214,0.2526,0.4014,False
+leaky,M2 one-class SVM (global),19,fuzzyball,39,140,0.6760,0.5840,0.7710,0.6410,0.4946,0.7746,0.3214,0.2391,0.3985,True
+leaky,M2 one-class SVM (global),22,cut selvage,9,140,0.2865,0.1436,0.4534,0.1111,0.0000,0.4000,0.3214,0.2473,0.4029,True
+leaky,M2 one-class SVM (global),23,crease,5,140,0.9029,0.8365,0.9644,1.0000,1.0000,1.0000,0.3214,0.2455,0.4037,True
+leaky,M2 one-class SVM (global),25,warp ball,5,140,0.6014,0.2779,0.9774,0.4000,0.0000,1.0000,0.3214,0.2455,0.4037,True
+leaky,M2 one-class SVM (global),27,knots,1,140,0.7571,0.6888,0.8278,1.0000,1.0000,1.0000,0.3214,0.2509,0.3943,False
+leaky,M2 one-class SVM (global),29,contamination,1,140,0.9500,0.9134,0.9812,1.0000,1.0000,1.0000,0.3214,0.2509,0.3943,False
+leaky,M2 one-class SVM (global),30,nep,14,140,0.6051,0.4103,0.7771,0.5714,0.2857,0.8401,0.3214,0.2418,0.4015,True
+leaky,M2 one-class SVM (global),36,weft crack,1,140,0.9500,0.9134,0.9812,1.0000,1.0000,1.0000,0.3214,0.2509,0.3943,False

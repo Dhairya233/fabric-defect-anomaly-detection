@@ -1,0 +1,53 @@
+{
+  "seed": 0,
+  "bootstrap_resamples": 1000,
+  "bootstrap_unit": "whole images",
+  "splits": [
+    "grouped",
+    "lofo",
+    "leaky"
+  ],
+  "methods": [
+    "M0 always clean",
+    "M0 brightness deviation",
+    "M0 raw contrast",
+    "M1 SVM (RBF)",
+    "M1 random forest",
+    "M2 Mahalanobis (global)",
+    "M2 Mahalanobis (per fabric)",
+    "M2 isolation forest (global)",
+    "M2 one-class SVM (global)"
+  ],
+  "not_applicable": [
+    "lofo: M2 Mahalanobis (per fabric)"
+  ],
+  "configurations_evaluated_on_test": 26,
+  "svm_C_selected_per_fold": {
+    "grouped": [
+      10.0,
+      10.0,
+      10.0,
+      0.1,
+      10.0
+    ],
+    "lofo": [
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      10.0
+    ],
+    "leaky": [
+      10.0,
+      10.0,
+      10.0,
+      10.0,
+      10.0
+    ]
+  },
+  "python": "3.12.3",
+  "scikit_learn": "1.9.1",
+  "numpy": "2.4.4"
+}

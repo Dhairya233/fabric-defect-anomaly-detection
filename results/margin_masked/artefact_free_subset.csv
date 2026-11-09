@@ -1,0 +1,27 @@
+split,method,fabrics,n_defective_images,mean_per_fabric_image_auroc,ci_low,ci_high
+grouped,M0 always clean,03+04+06,47,0.500,0.500,0.500
+grouped,M0 brightness deviation,03+04+06,47,0.429,0.308,0.559
+grouped,M0 raw contrast,03+04+06,47,0.448,0.329,0.566
+grouped,M1 SVM (RBF),03+04+06,47,0.708,0.579,0.831
+grouped,M1 random forest,03+04+06,47,0.745,0.615,0.850
+grouped,M2 Mahalanobis (global),03+04+06,47,0.580,0.463,0.699
+grouped,M2 Mahalanobis (per fabric),03+04+06,47,0.618,0.512,0.744
+grouped,M2 isolation forest (global),03+04+06,47,0.529,0.433,0.644
+grouped,M2 one-class SVM (global),03+04+06,47,0.448,0.340,0.563
+lofo,M0 always clean,03+04+06,47,0.500,0.500,0.500
+lofo,M0 brightness deviation,03+04+06,47,0.427,0.302,0.556
+lofo,M0 raw contrast,03+04+06,47,0.448,0.329,0.566
+lofo,M1 SVM (RBF),03+04+06,47,0.496,0.360,0.623
+lofo,M1 random forest,03+04+06,47,0.588,0.443,0.724
+lofo,M2 Mahalanobis (global),03+04+06,47,0.509,0.400,0.624
+lofo,M2 isolation forest (global),03+04+06,47,0.340,0.227,0.460
+lofo,M2 one-class SVM (global),03+04+06,47,0.459,0.348,0.579
+leaky,M0 always clean,03+04+06,47,0.500,0.500,0.500
+leaky,M0 brightness deviation,03+04+06,47,0.415,0.283,0.543
+leaky,M0 raw contrast,03+04+06,47,0.448,0.329,0.566
+leaky,M1 SVM (RBF),03+04+06,47,0.899,0.824,0.955
+leaky,M1 random forest,03+04+06,47,0.841,0.757,0.911
+leaky,M2 Mahalanobis (global),03+04+06,47,0.547,0.436,0.670
+leaky,M2 Mahalanobis (per fabric),03+04+06,47,0.644,0.522,0.769
+leaky,M2 isolation forest (global),03+04+06,47,0.506,0.404,0.625
+leaky,M2 one-class SVM (global),03+04+06,47,0.424,0.317,0.534
