@@ -1,0 +1,25 @@
+method,quantity,n_fabrics,mean_per_fabric_auroc,ci_low,ci_high,fabrics_where_grouped_is_higher
+M0 always clean,grouped,6,0.500,0.500,0.500,0
+M0 always clean,unseen fabric,6,0.500,0.500,0.500,0
+M0 always clean,grouped minus unseen,6,0.000,0.000,0.000,0
+M0 brightness deviation,grouped,6,0.590,0.440,0.773,2
+M0 brightness deviation,unseen fabric,6,0.596,0.442,0.781,2
+M0 brightness deviation,grouped minus unseen,6,-0.007,-0.022,0.004,2
+M0 raw contrast,grouped,6,0.590,0.438,0.729,0
+M0 raw contrast,unseen fabric,6,0.590,0.442,0.729,0
+M0 raw contrast,grouped minus unseen,6,0.000,0.000,0.000,0
+M1 SVM (RBF),grouped,6,0.749,0.650,0.851,5
+M1 SVM (RBF),unseen fabric,6,0.601,0.456,0.782,5
+M1 SVM (RBF),grouped minus unseen,6,0.147,0.050,0.230,5
+M1 random forest,grouped,6,0.819,0.737,0.905,5
+M1 random forest,unseen fabric,6,0.520,0.344,0.717,5
+M1 random forest,grouped minus unseen,6,0.298,0.099,0.516,5
+M2 Mahalanobis (global),grouped,6,0.752,0.561,0.917,5
+M2 Mahalanobis (global),unseen fabric,6,0.565,0.340,0.770,5
+M2 Mahalanobis (global),grouped minus unseen,6,0.186,0.034,0.453,5
+M2 isolation forest (global),grouped,6,0.698,0.490,0.884,3
+M2 isolation forest (global),unseen fabric,6,0.554,0.351,0.770,3
+M2 isolation forest (global),grouped minus unseen,6,0.144,-0.026,0.373,3
+M2 one-class SVM (global),grouped,6,0.680,0.476,0.872,4
+M2 one-class SVM (global),unseen fabric,6,0.470,0.273,0.642,4
+M2 one-class SVM (global),grouped minus unseen,6,0.210,0.006,0.517,4

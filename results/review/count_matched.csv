@@ -1,0 +1,47 @@
+split,method,image_score,macro_fabric_auroc,ci_low,ci_high,fabric_01_auroc
+grouped,M0 raw contrast,as scored,0.590,0.497,0.693,0.833
+grouped,M0 raw contrast,count-matched,0.587,0.499,0.691,0.833
+grouped,M0 brightness deviation,as scored,0.590,0.504,0.694,1.000
+grouped,M0 brightness deviation,count-matched,0.595,0.507,0.695,1.000
+grouped,M1 random forest,as scored,0.819,0.750,0.893,0.983
+grouped,M1 random forest,count-matched,0.826,0.753,0.898,0.987
+grouped,M1 SVM (RBF),as scored,0.749,0.680,0.852,0.946
+grouped,M1 SVM (RBF),count-matched,0.763,0.694,0.866,0.967
+grouped,M2 Mahalanobis (global),as scored,0.752,0.679,0.843,1.000
+grouped,M2 Mahalanobis (global),count-matched,0.752,0.683,0.847,1.000
+grouped,M2 Mahalanobis (per fabric),as scored,0.787,0.723,0.892,1.000
+grouped,M2 Mahalanobis (per fabric),count-matched,0.789,0.724,0.893,1.000
+grouped,M2 isolation forest (global),as scored,0.698,0.637,0.811,1.000
+grouped,M2 isolation forest (global),count-matched,0.698,0.635,0.814,1.000
+grouped,M2 one-class SVM (global),as scored,0.680,0.601,0.788,1.000
+grouped,M2 one-class SVM (global),count-matched,0.678,0.602,0.780,1.000
+lofo,M0 raw contrast,as scored,0.590,0.497,0.693,0.833
+lofo,M0 raw contrast,count-matched,0.587,0.499,0.691,0.833
+lofo,M0 brightness deviation,as scored,0.596,0.504,0.704,1.000
+lofo,M0 brightness deviation,count-matched,0.598,0.506,0.706,1.000
+lofo,M1 random forest,as scored,0.520,0.436,0.625,0.812
+lofo,M1 random forest,count-matched,0.532,0.449,0.632,0.808
+lofo,M1 SVM (RBF),as scored,0.601,0.515,0.719,1.000
+lofo,M1 SVM (RBF),count-matched,0.600,0.514,0.721,1.000
+lofo,M2 Mahalanobis (global),as scored,0.565,0.464,0.652,0.163
+lofo,M2 Mahalanobis (global),count-matched,0.561,0.462,0.648,0.154
+lofo,M2 isolation forest (global),as scored,0.554,0.479,0.641,1.000
+lofo,M2 isolation forest (global),count-matched,0.541,0.467,0.633,1.000
+lofo,M2 one-class SVM (global),as scored,0.470,0.373,0.546,0.050
+lofo,M2 one-class SVM (global),count-matched,0.469,0.369,0.547,0.021
+leaky,M0 raw contrast,as scored,0.590,0.497,0.693,0.833
+leaky,M0 raw contrast,count-matched,0.587,0.499,0.691,0.833
+leaky,M0 brightness deviation,as scored,0.581,0.492,0.690,1.000
+leaky,M0 brightness deviation,count-matched,0.584,0.496,0.690,1.000
+leaky,M1 random forest,as scored,0.890,0.827,0.944,1.000
+leaky,M1 random forest,count-matched,0.898,0.841,0.945,1.000
+leaky,M1 SVM (RBF),as scored,0.910,0.855,0.960,1.000
+leaky,M1 SVM (RBF),count-matched,0.916,0.863,0.959,1.000
+leaky,M2 Mahalanobis (global),as scored,0.734,0.658,0.833,1.000
+leaky,M2 Mahalanobis (global),count-matched,0.734,0.659,0.836,1.000
+leaky,M2 Mahalanobis (per fabric),as scored,0.815,0.753,0.906,1.000
+leaky,M2 Mahalanobis (per fabric),count-matched,0.816,0.755,0.907,1.000
+leaky,M2 isolation forest (global),as scored,0.679,0.617,0.796,1.000
+leaky,M2 isolation forest (global),count-matched,0.675,0.608,0.799,1.000
+leaky,M2 one-class SVM (global),as scored,0.678,0.593,0.771,1.000
+leaky,M2 one-class SVM (global),count-matched,0.675,0.589,0.769,1.000

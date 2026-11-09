@@ -1,0 +1,8 @@
+fabric,n_defective,clean_mean_valid_patches,defective_mean_valid_patches,auroc_patch_count
+00,7,20.5,22.3,0.64
+01,12,27.0,30.4,0.96
+02,38,28.0,28.1,0.51
+03,31,22.0,21.7,0.37
+04,10,29.6,28.6,0.32
+05,1,28.0,29.0,1.0
+06,6,29.5,30.0,0.58
