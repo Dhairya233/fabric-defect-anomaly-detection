@@ -1,0 +1,9 @@
+quantity,value
+strips,245
+strips_with_blank_columns,204
+strips_at_least_20_percent_blank,77
+max_blank_fraction_of_a_strip,0.302
+patches,7593
+patches_touching_a_margin,1141
+defective_patches,365
+defective_patches_touching_a_margin,30
