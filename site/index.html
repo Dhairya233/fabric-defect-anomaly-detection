@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fabric defect detection: what honest evaluation changes</title>
+<meta name="description" content="Results explorer for classical fabric defect detection on the AITEX AFID dataset: the same models scored with a leaky split, a split by strip, and a whole fabric held out.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F3EEE3'/%3E%3Crect x='6' y='6' width='4' height='20' fill='%2324507A'/%3E%3Crect x='14' y='6' width='4' height='20' fill='%23F3EEE3'/%3E%3Crect x='22' y='6' width='4' height='20' fill='%23A23B2A'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/source-serif-4-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="selvage" aria-hidden="true"></div>
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <span class="brand">Fabric defect lab</span>
+    <a href="#leakage">Leakage</a>
+    <a href="#strips">Strips</a>
+    <a href="#table">Table</a>
+    <a href="#methods">Methods</a>
+    <a href="#limits">Limits</a>
+    <a href="#data">Data</a>
+    <a href="https://github.com/Dhairya233/fabric-defect-anomaly-detection" rel="noopener">Code</a>
+  </div>
+</nav>
+
+<main id="main">
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">AITEX AFID &middot; classical features &middot; held-out evaluation</p>
+    <h1>Strong on a leaky split, near chance on an unseen fabric</h1>
+    <p class="lede">Texture features and anomaly detectors were scored on 245 fabric strips three different ways. For the supervised models, how the data is split changes the answer more than which model is used.</p>
+    <p class="stamp">Precomputed on held-out images; not a live model.</p>
+    <p class="stack">Python, scikit-learn and scikit-image for the study &middot; plain HTML, CSS and JavaScript for this page &middot; <a href="https://github.com/Dhairya233/fabric-defect-anomaly-detection">code on GitHub</a></p>
+    <ul class="facts">
+      <li><b>245</b><span>strips of 7 fabrics, 105 of them defective</span></li>
+      <li><b>+0.44</b><span>patch-level precision a random forest gains from a leaky split (95% interval 0.27 to 0.53)</span></li>
+      <li><b>0.59</b><span>highest of eight methods in strip-level AUROC on three fabrics held out one at a time (interval 0.44 to 0.72; 0.5 is chance)</span></li>
+    </ul>
+  </div>
+</header>
+
+<hr class="rule">
+<section id="leakage" aria-labelledby="h-leak">
+  <div class="wrap">
+    <h2 id="h-leak">The same model, three ways of splitting the data</h2>
+    <p class="intro">Each marker is one method scored under one split. A split decides which images a model may learn from and which it is tested on. Pick a row to see how far the three splits disagree.</p>
+    <ul class="legend" id="leak-legend" aria-label="Legend"></ul>
+
+    <div class="controls">
+      <fieldset class="field"><legend>Evaluation run</legend>
+        <div class="seg" id="ctl-run">
+          <label><input type="radio" name="run" value="masked" checked><span>Margins left out</span></label>
+          <label><input type="radio" name="run" value="as_is"><span>As-is</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="field"><legend>Measure</legend>
+        <div class="seg" id="ctl-metric">
+          <label><input type="radio" name="metric" value="image_macro_fabric_auroc" checked><span>Strip AUROC, per fabric</span></label>
+          <label><input type="radio" name="metric" value="image_auroc"><span>Strip AUROC, pooled</span></label>
+          <label><input type="radio" name="metric" value="patch_ap"><span>Patch precision</span></label>
+        </div>
+      </fieldset>
+      <div class="field"><span class="sr">View</span><button type="button" id="leak-astable" aria-pressed="false">Show as table</button></div>
+    </div>
+
+    <p class="note" id="metric-help"></p>
+    <div id="leak-chart" role="group" aria-label="Chart of scores for each method under three splits"></div>
+    <div id="leak-table" hidden></div>
+    <div class="gap" id="leak-gap" aria-live="polite"></div>
+
+    <div class="callout">
+      <p><b>How to read this.</b> Whiskers are 95% intervals from resampling whole strips, not patches. A random patch split puts neighbouring, overlapping patches of one strip on both sides, so a supervised model is scored on texture it has effectively seen. The anomaly detectors never train on defects, so there is nothing for them to leak.</p>
+      <p>&ldquo;Margins left out&rdquo; removes patches that touch a blank white edge of the strip (15% of all patches). See <a href="#data">About the data</a> for why that run is the one to read first.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+<section id="strips" aria-labelledby="h-strips">
+  <div class="wrap">
+    <h2 id="h-strips">Strip explorer</h2>
+    <p class="intro">Every row is one strip, tested once by a model that never saw it (grouped split, margins left out). No photographs are shown: the dataset states no licence, so each strip is drawn as what the method scored, with the true defect location marked above it.</p>
+
+    <div class="controls">
+      <div class="field"><label for="f-method">Method</label><select id="f-method"></select></div>
+      <div class="field"><label for="f-fabric">Fabric</label><select id="f-fabric"></select></div>
+      <div class="field"><label for="f-defect">Defect type</label><select id="f-defect"></select></div>
+      <div class="field"><label for="f-outcome">Outcome</label>
+        <select id="f-outcome">
+          <option value="all">All outcomes</option>
+          <option value="correct">Correct (detected or clear)</option>
+          <option value="missed">Missed defect</option>
+          <option value="false">False alarm</option>
+        </select>
+      </div>
+      <div class="field"><label for="f-sort">Order</label>
+        <select id="f-sort"><option value="attention">Errors first</option><option value="id">Strip number</option></select>
+      </div>
+    </div>
+
+    <ul class="key" aria-label="How to read a strip">
+      <li><svg width="28" height="14" aria-hidden="true"><rect x="0" y="0" width="28" height="14" fill="url(#hatch-gt)"/><rect x="0.5" y="0.5" width="27" height="13" fill="none" stroke="#1B2430"/></svg>True defect</li>
+      <li><span class="ramp" aria-hidden="true"></span>Score: below threshold &rarr; above</li>
+      <li><svg width="28" height="14" aria-hidden="true"><rect x="0" y="0" width="28" height="4" fill="#1B2430"/></svg>Bar = score above the threshold</li>
+      <li><svg width="28" height="14" aria-hidden="true"><rect x="0" y="0" width="28" height="14" fill="url(#hatch-mask)"/><rect x="0.5" y="0.5" width="27" height="13" fill="none" stroke="#6B6458"/></svg>Not scored (white margin)</li>
+    </ul>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+      <defs>
+        <pattern id="hatch-gt" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#F3EEE3"/><rect width="3" height="6" fill="#A23B2A"/></pattern>
+        <pattern id="hatch-mask" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="6" height="6" fill="#F3EEE3"/><rect width="1.5" height="6" fill="#6B6458"/></pattern>
+      </defs>
+    </svg>
+    <p class="count" id="strip-count" aria-live="polite"></p>
+    <div id="strip-list"></div>
+  </div>
+</section>
+
+<hr class="rule">
+<section id="table" aria-labelledby="h-table">
+  <div class="wrap">
+    <h2 id="h-table">Results table</h2>
+    <p class="intro">Every number is a point estimate with its 95% interval in brackets. An interval that spans 0.5 on an AUROC means the method is not clearly better than guessing.</p>
+    <div class="controls">
+      <fieldset class="field"><legend>Evaluation run</legend>
+        <div class="seg" id="tbl-run">
+          <label><input type="radio" name="trun" value="masked" checked><span>Margins left out</span></label>
+          <label><input type="radio" name="trun" value="as_is"><span>As-is</span></label>
+        </div>
+      </fieldset>
+      <div class="field"><label for="tbl-metric">Measure</label><select id="tbl-metric"></select></div>
+    </div>
+    <p class="note" id="tbl-help"></p>
+    <div id="tbl-out"></div>
+    <p class="note" id="tbl-counts"></p>
+  </div>
+</section>
+
+<hr class="rule">
+<section id="methods" aria-labelledby="h-methods">
+  <div class="wrap">
+    <h2 id="h-methods">Method sheet</h2>
+    <p class="intro">All learned methods use the same 90 texture features per 256&times;256 patch: grey-level co-occurrence statistics, local binary patterns, Gabor filter responses, Fourier band energies and intensity moments. Each strip is first normalised to a robust z-score so that features describe texture rather than the brightness of one fabric.</p>
+    <dl class="sheet">
+      <div class="entry"><dt>Raw contrast<small>Baseline</small></dt><dd>
+        <p>Score is the spread of raw pixel values in the patch. No training.</p>
+        <p><span class="k">Why it is here.</span> A one-line rule any real method must beat.</p>
+        <p><span class="k">Weakness.</span> It mostly measures which fabric it is looking at, and whether a blank margin is in view.</p></dd></div>
+      <div class="entry"><dt>Brightness deviation<small>Baseline</small></dt><dd>
+        <p>Score is how far the patch&rsquo;s average brightness is from the average clean patch.</p>
+        <p><span class="k">Weakness.</span> It separates clean from defective strips in some fabrics because of how they were captured, not because of defects (see <a href="#data">About the data</a>).</p></dd></div>
+      <div class="entry"><dt>Random forest<small>Supervised</small></dt><dd>
+        <p>300 trees on the texture features, trained on labelled patches (defective or clean) from the training strips.</p>
+        <p><span class="k">Weakness.</span> It learns the fabrics it was shown. On a new fabric its score drops to about chance, and its patch-level scores inflate when patches leak across the split.</p></dd></div>
+      <div class="entry"><dt>SVM (RBF)<small>Supervised</small></dt><dd>
+        <p>An RBF-kernel support vector machine on the same features. The penalty C is the only setting tuned, over three values, on validation patches only.</p>
+        <p><span class="k">Weakness.</span> Same as the random forest.</p></dd></div>
+      <div class="entry"><dt>Mahalanobis, global<small>Anomaly</small></dt><dd>
+        <p>Learns what normal fabric looks like from defect-free strips of every training fabric (mean and a shrinkage covariance of the features). A patch is scored by its distance from normal.</p>
+        <p><span class="k">Weakness.</span> One description of normal for several fabrics blurs them, so a different fabric can look like a defect.</p></dd></div>
+      <div class="entry"><dt>Mahalanobis, per fabric<small>Anomaly</small></dt><dd>
+        <p>The same idea with a separate model for each fabric. It needs to be told which fabric it is looking at, so it cannot run on a fabric it never trained on.</p>
+        <p><span class="k">Behaviour.</span> It raised no false alarms on the 140 clean strips in the grouped split, and found fewer than half of the defective ones.</p></dd></div>
+      <div class="entry"><dt>Isolation forest<small>Anomaly</small></dt><dd>
+        <p>Scores a patch by how easily random splits isolate it from defect-free patches.</p>
+        <p><span class="k">Weakness.</span> Scored below chance on unseen fabrics, and on one fabric even within the grouped split. I have not found the cause.</p></dd></div>
+      <div class="entry"><dt>One-class SVM<small>Anomaly</small></dt><dd>
+        <p>Learns a boundary around defect-free patches (RBF kernel, nu = 0.05) and scores distance outside it.</p>
+        <p><span class="k">Weakness.</span> Close to chance on the three cleanest fabrics.</p></dd></div>
+    </dl>
+    <p class="note">Cost on one CPU core: extracting features takes about 3 seconds per strip and dominates everything. Scoring a strip afterwards takes between 0.1 and 5 milliseconds. These are timings from a sandbox machine, not a deployment benchmark.</p>
+  </div>
+</section>
+
+<hr class="rule">
+<section id="limits" aria-labelledby="h-limits">
+  <div class="wrap">
+    <h2 id="h-limits">Limits</h2>
+    <ul class="limits">
+      <li><b>Small dataset.</b> 245 strips from 7 fabrics, 105 of them defective. One fabric has a single defective strip, and nine of twelve defect types have fewer than ten examples, so per-type numbers are not reliable.</li>
+      <li><b>One public benchmark.</b> Nothing here says how these methods behave on another dataset.</li>
+      <li><b>Not tested on real factory footage.</b> The images are lab captures of cut strips, not a moving line under production lighting, and nothing here measures speed on a real line.</li>
+      <li><b>Intervals are narrower than the full uncertainty.</b> They reflect which test strips were drawn, not a different random assignment of strips to folds (which moves the random forest by about &plusmn;0.02 and the SVM by &plusmn;0.05). Claims about new fabrics rest on six or seven fabrics: resampling fabrics widens the random forest&rsquo;s unseen-fabric interval to 0.34 to 0.72.</li>
+      <li><b>Some analysis choices came after seeing results.</b> The margin-masked run, the three-fabric subset and the preference for per-fabric AUROC were decided after looking at the data, which is why both runs are shown.</li>
+      <li><b>Localisation is coarse by design.</b> Scores exist per 256-pixel patch, stepped every 128 pixels, while the median defect covers about 280 pixels. No method locates a defect precisely.</li>
+      <li><b>No deep features.</b> Pretrained-network methods are the most important missing comparison. I could not download pretrained weights in the environment used.</li>
+      <li><b>Capture artefacts remain.</b> White margins were left out, but dark edge bands and clean-versus-defective brightness differences cannot all be removed.</li>
+    </ul>
+  </div>
+</section>
+
+<hr class="rule">
+<section id="data" aria-labelledby="h-data">
+  <div class="wrap">
+    <h2 id="h-data">About the data</h2>
+    <p class="intro">Looking at failure cases showed that the dataset itself can flatter a model. 204 of 245 strips have blank white margins where the camera sees past the fabric, and the amount of margin differs between clean and defective strips of the same fabric.</p>
+    <h3>Clean and defective strips are not always captured alike</h3>
+    <p class="intro">A defect covers about 0.03% of a strip, so it cannot change the strip&rsquo;s average brightness. Where brightness alone separates the classes, the strips were captured under different conditions.</p>
+    <div id="artefact-out"></div>
+    <h3>Strip AUROC on the three fabrics where they look alike</h3>
+    <p class="intro">Fabrics 03, 04 and 06 show no brightness difference, so they are the fairest test. The rule that picked them was written after looking at the numbers, so read this as a sensitivity check, not a pre-planned test. Margins left out; mean of per-fabric AUROC, 47 defective strips.</p>
+    <div id="subset-out"></div>
+
+    <h3>Citation and licence</h3>
+    <p class="intro">Data: the AITEX Fabric Image Database (AFID), <a href="https://www.aitex.es/afid/">aitex.es/afid</a>. The authors ask that work using it cites their paper:</p>
+    <p class="intro"><cite>J. Silvestre-Blanes, T. Albero-Albero, I. Miralles, R. P&eacute;rez-Llorens, J. Moreno. &ldquo;AFID: a public fabric image database for defect detection.&rdquo; AUTEX Research Journal, No. 4, 2019.</cite> <a href="https://content.sciendo.com/view/journals/aut/ahead-of-print/article-10.2478-aut-2019-0035.xml">Paper</a>.</p>
+    <p class="intro">The dataset page states no licence, so this site shows no dataset images. It contains only scores computed from them and the extents of the labelled defects.</p>
+  </div>
+</section>
+</main>
+
+<div class="selvage" aria-hidden="true"></div>
+<footer>
+  <div class="wrap">
+    <p>Code and results: <a href="https://github.com/Dhairya233/fabric-defect-anomaly-detection">github.com/Dhairya233/fabric-defect-anomaly-detection</a>. Code is MIT licensed. Fonts (Source Serif 4, IBM Plex Sans, IBM Plex Mono) are self-hosted under the SIL Open Font License.</p>
+    <p>Dhairya Shah &middot; <a href="https://github.com/Dhairya233">github.com/Dhairya233</a></p>
+  </div>
+</footer>
+<noscript><p class="wrap">This page draws its charts with JavaScript. The full tables are in the repository under results/.</p></noscript>
+<script src="js/app.js" defer></script>
+</body>
+</html>
